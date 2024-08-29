@@ -33,7 +33,6 @@ plt.xticks([0, 1, 2], ['Hate Speech', 'Offensive Language', 'Neither'])
 # Display the plot in Streamlit
 st.pyplot(plt)
 
-
 # Pie chart
 st.subheader('Proportion of Classes (Pie Chart)')
 labels = 'Hate Speech', 'Offensive Language', 'Neither'
@@ -45,8 +44,6 @@ ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.title('Distribution of Classes')
-plt.show()
-
 # Display the plot in Streamlit
 st.pyplot(plt)
 
