@@ -18,3 +18,25 @@ st.write(df.describe(include='all'))
 # Horizontal line separator
 st.markdown("---")
 
+# Count the occurrences of each class
+class_counts = df['class'].value_counts()
+# Create a bar chart
+fig_bar = px.bar(x=class_counts.index, y=class_counts.values, 
+                 labels={'x': 'Class', 'y': 'Count'},
+                 title='Distribution of Classes')
+
+# Create a pie chart
+fig_pie = px.pie(names=class_counts.index, values=class_counts.values,
+                 title='Proportion of Classes')
+
+# Bar chart
+st.subheader('Distribution of Classes (Bar Chart)')
+st.plotly_chart(fig_bar)
+
+# Pie chart
+st.subheader('Proportion of Classes (Pie Chart)')
+st.plotly_chart(fig_pie)
+
+# Horizontal line separator
+st.markdown("---")
+
