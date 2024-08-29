@@ -40,3 +40,6 @@ st.plotly_chart(fig_pie)
 # Horizontal line separator
 st.markdown("---")
 
+# Assuming 'class' is the name of the column you want to create a histogram for
+fig_hist = px.histogram(df, x='class', title='Distribution of Classes (Histogram)')
+st.plotly_chart(fig_hist)
