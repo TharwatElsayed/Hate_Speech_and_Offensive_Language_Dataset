@@ -54,12 +54,17 @@ plt.xticks([0, 1, 2], ['Hate Speech', 'Offensive Language', 'Neither'])
 st.pyplot(plt)
 
 # Create the pie chart
-plt.figure(figsize=(8, 6))
-plt.pie(df['class'], bins=3, edgecolor='black')
-plt.xlabel('Class')
-plt.ylabel('Frequency')
+# Pie chart, where the slices will be ordered and plotted counter-clockwise:
+labels = 'Hate Speech', 'Offensive Language', 'Neither'
+sizes = df['class'].value_counts()
+explode = (0, 0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.title('Distribution of Classes')
-plt.xticks([0, 1, 2], ['Hate Speech', 'Offensive Language', 'Neither'])
+plt.show()
 
 # Display the plot in Streamlit
 st.pyplot(plt)
