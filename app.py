@@ -27,7 +27,3 @@ st.plotly_chart(fig_class_dist)
 df['word_count'] = df['tweet'].apply(lambda x: len(x.split()))
 fig_word_count = px.histogram(df, x='word_count', title='Distribution of Word Counts')
 st.plotly_chart(fig_word_count)
-
-# ... Add more visualizations as needed ...
-
-!streamlit run app.py & npx localtunnel --port 8501
