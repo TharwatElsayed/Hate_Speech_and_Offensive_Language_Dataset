@@ -14,3 +14,7 @@ st.markdown("---")
 # Display basic dataset information
 st.subheader('Dataset Pefore Preprocessing Overview')
 st.write(df.describe())
+
+# Horizontal line separator
+st.markdown("---")
+
