@@ -42,9 +42,20 @@ st.plotly_chart(fig_pie)
 st.markdown("---")
 
 # Assuming 'class' is the name of the column you want to create a histogram for
-# Create the plot
+# Create the histogram
 plt.figure(figsize=(8, 6))
 plt.hist(df['class'], bins=3, edgecolor='black')
+plt.xlabel('Class')
+plt.ylabel('Frequency')
+plt.title('Distribution of Classes')
+plt.xticks([0, 1, 2], ['Hate Speech', 'Offensive Language', 'Neither'])
+
+# Display the plot in Streamlit
+st.pyplot(plt)
+
+# Create the pie chart
+plt.figure(figsize=(8, 6))
+plt.pie(df['class'], bins=3, edgecolor='black')
 plt.xlabel('Class')
 plt.ylabel('Frequency')
 plt.title('Distribution of Classes')
