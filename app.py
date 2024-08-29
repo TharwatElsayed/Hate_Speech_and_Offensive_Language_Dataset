@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from google.colab import drive
 
 # Load the dataset
 df = pd.read_csv('labeled_data.csv')
