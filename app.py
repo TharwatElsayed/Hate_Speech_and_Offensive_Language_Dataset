@@ -12,7 +12,7 @@ st.title('Hate Speech and Offensive Language Analysis')
 st.markdown("---")
 
 # Display basic dataset information
-st.subheader('Dataset Pefore Preprocessing Overview')
+st.subheader('Dataset Overview (Before Preprocessing)')
 st.write(df.describe(include='all'))
 
 # Horizontal line separator
