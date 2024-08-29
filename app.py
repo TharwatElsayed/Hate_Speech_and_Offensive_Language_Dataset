@@ -3,11 +3,8 @@ import pandas as pd
 import plotly.express as px
 from google.colab import drive
 
-# Mount Google Drive
-drive.mount('/content/drive')
-
 # Load the dataset
-df = pd.read_csv('/content/drive/MyDrive/1- PhD/4-2023/10- Merge/Analysis/labeled_data.csv')
+df = pd.read_csv('labeled_data.csv')
 
 # Set Streamlit page title
 st.title('Hate Speech and Offensive Language Analysis')
