@@ -9,5 +9,5 @@ df = pd.read_csv('labeled_data.csv')
 st.title('Hate Speech and Offensive Language Analysis')
 
 # Display basic dataset information
-st.subheader('Dataset Overview')
+st.subheader('Dataset Pefore Preprocessing Overview')
 st.write(df.describe())
