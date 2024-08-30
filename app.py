@@ -27,8 +27,15 @@ with tab2:
 
 # Tab 3: Dataset Brief Information
 with tab3:
-    st.subheader('Dataset Brief Information')
-    st.write(df.info())
+   st.subheader('Dataset Information')
+
+    # Capture the df.info() output
+    buffer = io.StringIO()
+    df.info(buf=buffer)
+    s = buffer.getvalue()
+
+    # Display the info in Streamlit
+    st.text(s)
 
 # Horizontal line separator
 st.markdown("---")
