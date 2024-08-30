@@ -12,13 +12,18 @@ st.title('Hate Speech and Offensive Language Analysis')
 # Horizontal line separator
 st.markdown("---")
 
-# Display basic dataset information
-st.subheader('Dataset Overview (Before Preprocessing)')
-st.write(df.head(10))
+# Create tabs
+tab1, tab2 = st.tabs(["Dataset Overview", "Dataset Description"])
 
-# Display basic dataset information
-st.subheader('Dataset Columns Description')
-st.write(df.describe(include='all'))
+# Tab 1: Dataset Overview
+with tab1:
+    st.subheader('Dataset Overview (Before Preprocessing)')
+    st.write(df.head(10))
+
+# Tab 2: Dataset Columns Description
+with tab2:
+    st.subheader('Dataset Columns Description')
+    st.write(df.describe(include='all'))
 
 # Horizontal line separator
 st.markdown("---")
