@@ -13,7 +13,7 @@ st.title('Hate Speech and Offensive Language Analysis')
 st.markdown("---")
 
 # Create tabs
-tab1, tab2 = st.tabs(["Dataset Overview", "Dataset Description"])
+tab1, tab2 = st.tabs(["Dataset Overview", "Dataset Description", "Dataset Information"])
 
 # Tab 1: Dataset Overview
 with tab1:
@@ -24,6 +24,11 @@ with tab1:
 with tab2:
     st.subheader('Dataset Columns Description')
     st.write(df.describe(include='all'))
+
+# Tab 3: Dataset Brief Information
+with tab2:
+    st.subheader('Dataset Brief Information)
+    st.write(df.info())
 
 # Horizontal line separator
 st.markdown("---")
