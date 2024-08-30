@@ -75,3 +75,12 @@ st.write(df.tweet)
 
 # Horizontal line separator
 st.markdown("---")
+
+# Load the stemmed_tweets
+df_stemmed = pd.read_csv('stemmed_tweets.csv')
+st.subheader('Tweets (After Stemming)')
+st.write(df_stemmed)
+
+# Horizontal line separator
+st.markdown("---")
+
