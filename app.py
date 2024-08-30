@@ -14,8 +14,6 @@ st.markdown("---")
 
 # Display basic dataset information
 st.subheader('Dataset Overview (Before Preprocessing)')
-st.write(df.head(10)
-
 st.write(df.describe(include='all')
 
 # Horizontal line separator
