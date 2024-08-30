@@ -23,9 +23,6 @@ st.write(df.describe(include='all'))
 # Horizontal line separator
 st.markdown("---")
 
-# Set Streamlit page title
-st.title('Hate Speech and Offensive Language Analysis')
-
 # Create a radio button for chart selection
 chart_type = st.radio("Choose Chart Type", ('Bar Chart', 'Pie Chart'))
 
