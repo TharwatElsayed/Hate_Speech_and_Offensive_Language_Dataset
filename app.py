@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
+import io
 
 # Load the dataset
 df = pd.read_csv('labeled_data.csv')
