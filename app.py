@@ -13,7 +13,7 @@ st.title('Hate Speech and Offensive Language Analysis')
 st.markdown("---")
 
 # Create tabs
-tab1, tab2 = st.tabs(["Dataset Overview", "Dataset Description", "Dataset Information"])
+tab1, tab2, tab3 = st.tabs(["Dataset Overview", "Dataset Description", "Dataset Information"])
 
 # Tab 1: Dataset Overview
 with tab1:
