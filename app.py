@@ -69,3 +69,9 @@ elif chart_type == 'Pie Chart':
 
 # Horizontal line separator
 st.markdown("---")
+
+st.subheader('Tweets (Before Preprocessing)')
+st.write(df.tweet)
+
+# Horizontal line separator
+st.markdown("---")
