@@ -27,7 +27,7 @@ with tab2:
 
 # Tab 3: Dataset Brief Information
 with tab2:
-    st.subheader('Dataset Brief Information)
+    st.subheader('Dataset Brief Information')
     st.write(df.info())
 
 # Horizontal line separator
