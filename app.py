@@ -26,7 +26,7 @@ with tab2:
     st.write(df.describe(include='all'))
 
 # Tab 3: Dataset Brief Information
-with tab2:
+with tab3:
     st.subheader('Dataset Brief Information')
     st.write(df.info())
 
